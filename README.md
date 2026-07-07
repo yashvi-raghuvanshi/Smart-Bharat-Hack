@@ -33,7 +33,7 @@ assistance through an AI companion — in English or Hindi.
 cd backend
 npm install 
 ```
-# create a .env file with GEMINI_API_KEY=your_key
+
 ``` bash
 npm run dev
 ```
