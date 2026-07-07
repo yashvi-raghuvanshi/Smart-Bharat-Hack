@@ -84,7 +84,7 @@ export default function ChatAssistant() {
       </div>
 
       <div className="p-3 border-t flex gap-2">
-        <textarea
+        <textarea aria-label="Type your message to Bharat Mitra"
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={handleKeyDown}
@@ -92,7 +92,7 @@ export default function ChatAssistant() {
           rows={1}
           className="flex-1 border rounded-full px-4 py-2 text-sm resize-none focus:outline-none focus:ring-2 focus:ring-orange-500"
         />
-        <button
+        <button aria-label="Send message" 
           onClick={handleSend}
           disabled={loading}
           className="bg-orange-600 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-orange-700 disabled:opacity-50"
