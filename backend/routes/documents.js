@@ -9,7 +9,7 @@ router.post("/", async (req, res) => {
   try {
     const { query, language = "English" } = req.body;
     const model = genAI.getGenerativeModel({
-      model: "gemini-2.5-flash-lite",
+      model: "gemini-2.5-flash",
       systemInstruction: DOCUMENT_HELPER_PROMPT(language),
     });
     const result = await model.generateContent(query);
