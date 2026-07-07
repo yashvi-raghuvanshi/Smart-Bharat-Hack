@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE = "http://localhost:8000/api";
+const API_BASE = "https://smart-bharat-hack.onrender.com";
 
 export const sendChatMessage = async (message, language, history) => {
   const res = await axios.post(`${API_BASE}/chat`, { message, language, history });
